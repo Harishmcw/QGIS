@@ -26,7 +26,7 @@ permissions:
 
 jobs:
   mingw-w64-msys2-build:
-    name: MSYS2 MinGW-w64 Windows Build
+    name: MSYS2 MinGW-w64 Windows Build [ucrt64]
     runs-on: windows-latest
     #strategy:
     #  fail-fast: false
