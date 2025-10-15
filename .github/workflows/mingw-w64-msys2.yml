@@ -90,3 +90,9 @@ jobs:
         with:
           path: build
           key: build-ccache-mingw64-msys2-${{ github.ref_name }}-${{ github.run_id }}
+      - name: Upload build directory
+        uses: actions/upload-artifact@v4
+        with:
+          name: qgis-build-${{ github.ref_name }}
+          path: build/
+
